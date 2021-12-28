@@ -20,6 +20,7 @@
 
 [merge]
 	conflictstyle = diff3
+	ff = only
 	; defaultToUpstream = true
 
 [diff]
@@ -27,6 +28,9 @@
 
 [push]
 	default = simple
+
+[pull]
+	ff = only
 
 [color "status"]
 	added = green
