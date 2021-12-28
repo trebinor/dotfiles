@@ -2,7 +2,7 @@
 
 for functions in ~/.config/shell/functions
 do
-    [ -f ~/.config/shell/functions ] && source ~/.config/shell/functions
+    [ -f $functions ] && source $functions
 done
 
 echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc"
