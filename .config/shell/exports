@@ -16,5 +16,5 @@ export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
 
 for p in $HOME/.local/bin $HOME/.cargo/bin
 do
-    pathmunge $p after
+    pathmunge $p before
 done
