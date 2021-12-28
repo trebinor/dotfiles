@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+alias \
+ka="killall" \
+mkd="mkdir -pv" \
+v="nvim" \
+vim="nvim" \
+SS="sudo systemctl" \
+ll="ls -al" \
+rg="rg --ignore-file ~/.config/git/ignore" \
+mj="make -j" \
+gpom="git push origin master" \
+gfa="git fetch --all" \

@@ -1,0 +1,74 @@
+; vim: set sw=4 ts=4 sts=0 noexpandtab smarttab:
+
+[user]
+	name = trebinor
+	email = trebinor@users.noreply.github.com
+[include]
+	path = ~/.config/git/config_private
+
+[core]
+	editor = vim
+	pager = less -F -X -S
+	whitespace = trailing-space,space-before-tab
+
+; Used when applying a patch
+[apply]
+	whitespace = fix
+
+[color]
+	ui = auto
+
+[merge]
+	conflictstyle = diff3
+	; defaultToUpstream = true
+
+[diff]
+	colorMoved = default
+
+[push]
+	default = simple
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
+
+[color "diff"]
+	meta = cyan
+	frag = magenta
+	old = red
+	new = green
+
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	ca = commit --amend
+	ri = rebase -i --autosquash
+	unstage = reset HEAD --
+	last = log -1 HEAD --stat
+	di = diff
+	dc = diff --cached
+	t = tag -n
+	br = branch -vv
+	l = log --decorate
+	lo = log --decorate --oneline
+	; lo = !git --no-pager log --oneline --decorate=short
+	lc = log ORIG_HEAD.. --stat --no-merges
+	incoming = log --decorate --oneline ..@{upstream}
+	; incoming = !git update && git log ..@{upstream}
+	outgoing = log --decorate --oneline @{upstream}..
+	graph = log --graph --pretty=oneline --abbrev-commit --decorate
+	;compare = show-branch --more=999 --current
+	ccompare = show-branch --current --topo-order
+	;compare = show-branch --topo-order
+	update = fetch --verbose --all --prune
+	ls = ls-files
+	sb = show-branch --topo-order --more=9999
+	root = rev-parse --show-toplevel
+	k = !gitk
+	ctags = !.git/hooks/ctags
+	upstream = !git push -u origin HEAD
+
+; The following command removes all references of <filename> from the repository
+; git filter-branch --index-filter 'git rm --cached --ignore-unmatch <filename>' --prune-empty HEAD
