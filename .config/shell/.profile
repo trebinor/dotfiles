@@ -12,6 +12,4 @@ do
     [ -f $exports ] && source $exports
 done
 
-[ -f $HOME/.cargo/env ] && source "$HOME/.cargo/env"
-
 export PATH
