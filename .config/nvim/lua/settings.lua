@@ -1,5 +1,7 @@
 local opt = vim.opt             -- options table
+local cmd = vim.cmd
 
+cmd 'colorscheme delek'
 opt.modeline = false            -- prevent security vulnerability (FIXME: Is this still needed for Neovim?)
 opt.modelines = 0
 opt.expandtab = true            -- convert tabs to spaces
