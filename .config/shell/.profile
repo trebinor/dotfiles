@@ -7,7 +7,7 @@ done
 
 echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc"
 
-for exports in ~/.config/shell/exports ~/.config/shell/exports_private
+for exports in ~/.config/shell/exports_private ~/.config/shell/exports
 do
     [ -f $exports ] && source $exports
 done

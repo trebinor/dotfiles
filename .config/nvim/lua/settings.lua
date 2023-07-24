@@ -5,8 +5,8 @@ cmd 'colorscheme delek'
 opt.modeline = false            -- prevent security vulnerability (FIXME: Is this still needed for Neovim?)
 opt.modelines = 0
 opt.expandtab = true            -- convert tabs to spaces
-opt.tabstop = 4                 -- spaces per tab
-opt.shiftwidth = 4              -- indent size
+opt.tabstop = 2                 -- spaces per tab
+opt.shiftwidth = 2              -- indent size
 opt.softtabstop = 0             -- use shiftwidth value
 opt.list = true                 -- invisible characters
 opt.number = true               -- line numbers
