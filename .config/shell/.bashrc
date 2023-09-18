@@ -9,6 +9,7 @@ else
 fi
 if [[ "$-" == *i* ]]; then
     PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 2)\]\$(__git_ps1 \" (%s)\")\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\n\$ \[$(tput sgr0)\]"
+    #PS1="%B%S%t%s%b %U%m%u ! %B%c9/\nb${MY_TREE_NUM}::%B%c3%b> "
 fi
 
 for dotfile_alias_file in ~/.config/shell/aliases ~/.config/shell/aliases_private
