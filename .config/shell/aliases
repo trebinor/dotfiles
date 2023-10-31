@@ -9,6 +9,6 @@ ss="sudo systemctl" \
 ll="ls -al" \
 rg="rg --ignore-file ~/.config/git/ignore" \
 mj="make -j" \
-gpom="git push origin master" \
+gpom="git push origin main" \
 gfa="git fetch --all" \
 duf="lfs -c +use_percent,mount-use" \

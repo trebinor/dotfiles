@@ -76,3 +76,5 @@
 
 ; The following command removes all references of <filename> from the repository
 ; git filter-branch --index-filter 'git rm --cached --ignore-unmatch <filename>' --prune-empty HEAD
+[init]
+	defaultBranch = main
