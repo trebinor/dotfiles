@@ -1,0 +1,30 @@
+# Use custom format
+format = '''(bold green)$all'''
+
+
+# Wait in milliseconds for starship to check files under the current directory.
+scan_timeout = 30
+
+# Enable the blank line at the start of the prompt
+add_newline = true
+
+command_timeout = 2000
+
+[cmd_duration]
+min_time = 500
+
+[git_branch]
+style = 'bold green'
+
+[hostname]
+format = '[$hostname](red) '
+
+[directory]
+truncate_to_repo = false
+truncation_length = 0
+
+[python]
+python_binary = 'python3'
+
+[username]
+format = '[$user](purple)@'
