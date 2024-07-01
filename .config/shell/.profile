@@ -13,3 +13,5 @@ do
 done
 
 export PATH
+
+eval "$(starship init bash)"
