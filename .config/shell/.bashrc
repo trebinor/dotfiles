@@ -16,4 +16,4 @@ for dotfile_alias_file in ~/.config/shell/aliases ~/.config/shell/aliases_privat
 do
     [ -f $dotfile_alias_file ] && source $dotfile_alias_file
 done
-. "$HOME/.cargo/env"
+[ -f $HOME/.cargo/env ] && . "$HOME/.cargo/env"
