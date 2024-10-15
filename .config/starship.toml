@@ -14,7 +14,16 @@ command_timeout = 2000
 min_time = 500
 
 [git_branch]
-style = 'bold green'
+disabled = false
+
+[git_commit]
+disabled = true
+
+[git_state]
+disabled = false
+
+[git_status]
+disabled = true
 
 [hostname]
 format = '[$hostname](red) '
